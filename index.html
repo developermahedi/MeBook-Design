@@ -1,0 +1,956 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- favicon link -->
+    <link rel="shortcut icon" href="./assets/favicon.png" type="image/x-icon">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css" integrity="sha384-r4NyP46KrjDleawBgD5tp8Y7UzmLA05oM1iAEQ17CSuDqnUK2+k9luXQOfXJCJ4I" crossorigin="anonymous">
+    <!-- font Awesome cdn -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Lineicons CSS -->
+      <link href="https://cdn.lineicons.com/3.0/lineicons.css" rel="stylesheet">
+      <!-- our css link -->
+      <link rel="stylesheet" href="./scss/style.css">
+    <title>MeBook-  Jasika ismit</title>
+  </head>
+  <body>
+      <!-- header section -->
+      <header class="main_header">
+        <div class="container-fluid">
+            <nav>
+                <div class="row">
+                    <div class="col-xl-4 col-lg-4 col-md-4 col-sm-4 mx-auto">
+                        <div class="navbar_left">
+                           <div class="logo_wrapper d-flex">
+                                <div class="logo">
+                                <a href="#"><b>M</b>eBook</a>
+                                </div>
+                                <div class="search">
+                                    <span><i class="fas fa-search"></i></span>
+                                    <input type="search" placeholder="Secach iSbook">
+                                </div>
+                           </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-4 col-lg-4 col-md-4 col-sm-4 mx-auto">
+                        <div class="navbar_middle">
+                            <ul>
+                                <li><a href="#"><span class="active"> <i class="fas fa-home"></i></span></a></li>
+                                <li><a href="#"><span class="friendsicon"> <i class="fas fa-user-friends"></i></span></a></li>
+                                <li><a href="#"><span> <i class="far fa-caret-square-right"></i></span></a></li>
+                                <li><a href="#"><span> <i class="lni lni-restaurant"></i></span></a></li>
+                                <li><a href="#"><span class="iconRound"> <i class="fas fa-users"></i></span></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-xl-4 col-lg-4 col-md-4 col-sm-4 mx-auto">
+                        <div class="navbar_right">
+                            <div class="profile_wrapper">
+                                <div class="profile_img">
+                                <figure>
+                                    <img class="img-fluid" src="./assets/profile.jpg" alt="profile img"> <strong>Jasika ismit</strong>
+                                </figure>
+                                </div>
+                            <div class="profile_icon">
+                                <ul>
+                                    <li><a href="#"><span> <i class="fas fa-plus"></i></span></a></li>
+                                    <li><a href="#"><span class="messenger"> <i class="fab fa-facebook-messenger"></i></span></a></li>
+                                    <li><a href="#"><span class="bellicon"> <i class="fas fa-bell"></i></span></a></li>
+                                    <li><a href="#"><span> <i class="fas fa-caret-down"></i></span></a>
+                                        <ul>
+                                            <li class="borderbottom"><a href="#"><div class="profile_img leftside">
+                                                <figure>
+                                                    <img class="img-fluid" src="./assets/profile.jpg" alt="profile img"> <strong>Jasika ismit</strong>
+                                                    <p> see your profile</p>
+                                                </figure>
+                                                </div>
+                                            </a>
+                                            </li>
+                                            <li><a href="#">
+                                                <div class="setting_wrapper">
+                                                <div class="setting_icon">
+                                                    <span class="left"><img class="img-fluid" src="./assets/feedback.png" alt=""></span>
+                                                </div>
+                                                <div class="setting_title">
+                                                    <h5> Give Feedback</h5>
+                                                </div>
+                                                </div>
+                                            </a>
+                                            </li>
+                                            <li><a href="#">
+                                                <div class="setting_wrapper">
+                                                <div class="setting_icon">
+                                                    <span class="left2"><i class="fas fa-cog"></i></span>
+                                                </div>
+                                                <div class="setting_title">
+                                                    <h5>Setting and Privacy</h5>
+                                                </div>
+                                                </div>
+                                            </a>
+                                            </li>
+                                            <li><a href="#">
+                                                <div class="setting_wrapper">
+                                                <div class="setting_icon">
+                                                    <span class="left3"><i class="fas fa-question-circle"></i></span>
+                                                </div>
+                                                <div class="setting_title">
+                                                    <h5>Help and Support</h5>
+                                                </div>
+                                                </div>
+                                            </a>
+                                            </li>
+                                            <li><a href="#">
+                                                <div class="setting_wrapper">
+                                                <div class="setting_icon">
+                                                    <span class="left4"><i class="fas fa-moon"></i></span>
+                                                </div>
+                                                <div class="setting_title">
+                                                    <h5>Display and Accessibility</h5>
+                                                </div>
+                                                </div>
+                                            </a>
+                                            </li>
+                                            <li><a href="#">
+                                                <div class="setting_wrapper">
+                                                <div class="setting_icon">
+                                                    <span class="left5"><img class="img-fluid" src="./assets/logout.png" alt=""></span>
+                                                </div>
+                                                <div class="setting_title">
+                                                    <h5>Log Out</h5>
+                                                </div>
+                                                </div>
+                                            </a>
+                                            </li>
+                                        </ul>
+
+                                    </li>
+                                </ul>
+                            </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </div>
+      </header>
+<!-- main content section -->
+<div class="main_content_section">
+    <div class="container-fluid">
+        <div class="row">
+             <div class="col-xl-3 col-lg-3 col-md-3 col-sm-3 mx-auto">
+                 <div class="main_content_left_wrapper">
+                     <div class="main_profile_img">
+                        <figure>
+                            <img class="img-fluid" src="./assets/profile.jpg" alt="profile img"> <strong>Jasika ismit</strong>
+                        </figure>
+                     </div>
+                     <div class="main_content_left_list">
+                         <ul>
+                             <li><a href="#" class="iconone"><i class="fas fa-heart"></i><span> COVID-19 information center</span></a></li>
+                             <li><a href="#" class="icontwo"><i class="fas fa-user-friends"></i><span> Friends</span></a></li>
+                             <li><a href="#" class="iconthree"><i class="fas fa-users"></i><span> Groups</span></a></li>
+                             <li><a href="#" class="iconfour"><i class="lni lni-restaurant"></i><span> Marketplace</span></a></li>
+                             <li><a href="#" class="iconfive"><i class="far fa-caret-square-right"></i><span> Wacth</span></a></li>
+                             <li><a href="#" class="iconsix"><i class="lni lni-layout"></i><span> Events</span></a></li>
+                             <li><a href="#" class="iconseven"><i class="fas fa-clock"></i><span> Memories</span></a></li>
+                             <li><a href="#" class="iconeight"><i class="fas fa-bookmark"></i><span> Saved</span></a></li>
+                             <li><a href="#" class="iconnine"><i class="fas fa-flag"></i><span> Pgae</span></a></li>
+                             <li><a href="#" class="seemore"><i class="fas fa-angle-down"></i> See More<span class="semore2"> </span></a></li>
+                         </ul>
+                     </div>
+                     <div class="main_content_left_shortcuts">
+                         <div class="shortcuts_title_wrappr">
+                             <div class="shortcuts_title">
+                             <h5>Shortcuts</h5>
+                         </div>
+                         <div class="shortcuts_title_icon">
+                             <span><i class="fas fa-ellipsis-h"></i></span>
+                         </div>
+                         </div>
+                        
+                        <div class="shortcuts_profile_img">
+                            <figure>
+                                <img class="img-fluid" src="./assets/120x120.jpg" alt="">
+                                 <strong>Olivia Sophia</strong>
+                            </figure>
+                        </div>
+                        <div class="shortcuts_profile_img">
+                            <figure>
+                                <img class="img-fluid" src="./assets/120x120 (2).jpg" alt="">
+                                 <strong>Emma Camila</strong>
+                            </figure>
+                        </div>
+                        <div class="shortcuts_profile_img">
+                            <figure>
+                                <img class="img-fluid" src="./assets/120x120 (3).jpg" alt="">
+                                 <strong>Amelia Mia</strong>
+                            </figure>
+                        </div>
+                        <div class="shortcuts_profile_img">
+                            <figure>
+                                <img class="img-fluid" src="./assets/120x120 (4).jpg" alt="">
+                                 <strong>Ava Evelyn</strong>
+                            </figure>
+                        </div>
+                        <div class="shortcuts_profile_img">
+                            <figure>
+                                <img class="img-fluid" src="./assets/120x120 (5).jpg" alt="">
+                                 <strong>Isabella Abigail</strong>
+                            </figure>
+                        </div>
+                        <a href="#" class="seemore"><i class="fas fa-angle-down"></i> See More<span class="semore2"> </span></a>
+                     </div>
+                 </div>
+             </div>
+             <!-- main_content_middle -->
+             <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 mx-auto" id="main_middle_content">
+                 <div class="main_content_middle">
+                     <div class="main_content_middle_wrapper">
+                         <div class="main_content_profile_img">
+                         <img class="img-fluid" src="./assets/profile 231x410.jpg" alt="">
+                         <div class="main_content_profile_img_content">
+                             <div class="profile_img_content_icon">
+                                 <span class="icon1"><i class="fas fa-plus"></i></span>
+                             </div>
+                             <div class="profile_img_content_title">
+                                 <p>Add to Story</p>
+                             </div>
+                         </div>
+                     </div>
+                         <div class="main_content_profile_img">
+                         <img class="img-fluid" src="./assets/231x410 (2).jpg" alt="">
+                         <div class="main_content_profile_img_content">
+                             <div class="profile_img_content_icon">
+                                 <span><img class="img-fluid" src="./assets/120x120.jpg" alt=""></span>
+                             </div>
+                             <div class="profile_img_content_title">
+                                 <p>Aubrey</p>
+                             </div>
+                         </div>
+                     </div>
+                         <div class="main_content_profile_img">
+                         <img class="img-fluid" src="./assets/231x410 (3).jpg" alt="">
+                         <div class="main_content_profile_img_content">
+                             <div class="profile_img_content_icon">
+                                 <span><img class="img-fluid" src="./assets/120x120 (2).jpg" alt=""></span>
+                             </div>
+                             <div class="profile_img_content_title">
+                                 <p>Natalie</p>
+                             </div>
+                         </div>
+                     </div>
+                         <div class="main_content_profile_img">
+                         <img class="img-fluid" src="./assets/231x410 (4).jpg" alt="">
+                         <div class="main_content_profile_img_content">
+                             <div class="profile_img_content_icon">
+                                 <span><img class="img-fluid" src="./assets/120x120 (3).jpg" alt=""></span>
+                             </div>
+                             <div class="profile_img_content_title">
+                                 <p>Everly</p>
+                             </div>
+                         </div>
+                     </div>
+                         <div class="main_content_profile_img">
+                             <strong><i class="fas fa-angle-right"></i></strong>
+                         <img class="img-fluid" src="./assets/231x410.jpg" alt="">
+                         <div class="main_content_profile_img_content">
+                             <div class="profile_img_content_icon">
+                                 <span><img class="img-fluid" src="./assets/120x120 (4).jpg" alt=""></span>
+                             </div>
+                             <div class="profile_img_content_title">
+                                 <p>Emilia Claire</p>
+                             </div>
+                         </div>
+                     </div>
+                     </div>
+                 </div>
+                 <!-- profile img input -->
+                 <div class="profile_input">
+                     <div class="profile_img_middle_wrapper">
+                         <div class="profile_img_left">
+                             <figure>
+                                 <img class="img-fluid" src="./assets/profile.jpg" alt="">
+                             </figure>
+                         </div>
+                         <div class="profile_img_right">
+                             <input type="text" placeholder="what's on your mind, jasika?">
+                         </div>
+                     </div>
+                     <div class="proflie_img_middle_icon">
+                         <ul>
+                             <li><a href="#" class="icon0"><i class="fas fa-video"></i> <span>Live video</span></a></li>
+                             <li><a href="#" class="icon1"><i class="fas fa-images"></i> <span>Photo/video</span></a></li>
+                             <li><a href="#" class="icon3"><i class="fas fa-smile"></i> <span>felling/activity</span></a></li>
+                         </ul>
+                     </div>
+                 </div>
+                 <!-- create room -->
+                 <div class="create_room">
+                     <div class="creaate_room_wrapper">
+                         <span><i class="fas fa-angle-right"></i></span>
+                         <div class="cteate_room_icon">
+                             <p><i class="fas fa-video"></i> Create room</p>
+                         </div>
+                         <div class="cteate_room_list">
+                             <ul>
+                                 <li><a href="#"><img class="img-fluid" src="./assets/120x120 (2).jpg" alt=""></a></li>
+                                 <li><a href="#"><img class="img-fluid" src="./assets/120x120 (4).jpg" alt=""></a></li>
+                                 <li><a href="#"><img class="img-fluid" src="./assets/120x120(5).jpg" alt=""></a></li>
+                                 <li><a href="#"><img class="img-fluid" src="./assets/120x120(7).jpg" alt=""></a></li>
+                                 <li><a href="#"><img class="img-fluid" src="./assets/120x120(8).jpg" alt=""></a></li>
+                             </ul>
+                         </div>
+                     </div>
+                 </div>
+                 <!-- add friends section -->
+                 <div class="add_friend_section">
+                     <div class="add_friend_section_wrapper">
+                         <div class="add_friend_title_wrapper">
+                             <div class="add_friend_title">
+                                 <h5>Poeple You May Know</h5>
+                             </div>
+                             <div class="add_friend_title_icon">
+                                 <span><i class="fas fa-ellipsis-h"></i></span>
+                             </div>
+                         </div>
+                         <!-- add friend img -->
+                         <div class="add_friend_wrapper d-flex">
+                             <strong><i class="fas fa-angle-right"></i></strong>
+                         <div class="add_friend_img_wrapper">
+                             <div class="add_friend_img">
+                            <img class="img-fluid" src="./assets/255x255 1.jpg" alt="">
+                         </div>
+                         <div class="add_friend_title_wrapper2">
+                             <div class="add_friend_img_title">
+                             <h5>MD LIMON ALI</h5>
+                         </div>
+                         <div class="add_friend_smallimg">
+                             <img class="img-fluid" src="./assets/120x120 (3).jpg" alt="">
+                             <span>54 mutual friends</span>
+                         </div>
+                         <div class="add_friend_img_btn">
+                             <a href="#"> <span><i class="fas fa-user-plus"></i></span> Add Friend</a>
+                         </div>
+                         </div>
+                         </div>
+                         <div class="add_friend_img_wrapper">
+                             <div class="add_friend_img">
+                            <img class="img-fluid" src="./assets/255x255 4.jpg" alt="">
+                         </div>
+                         <div class="add_friend_title_wrapper2">
+                             <div class="add_friend_img_title">
+                             <h5>MD AMIN ALI</h5>
+                         </div>
+                         <div class="add_friend_smallimg">
+                             <img class="img-fluid" src="./assets/120x120(5).jpg" alt="">
+                             <span>56 mutual friends</span>
+                         </div>
+                         <div class="add_friend_img_btn">
+                             <a href="#"> <span><i class="fas fa-user-plus"></i></span> Add Friend</a>
+                         </div>
+                         </div>
+                         </div>
+                         <div class="add_friend_img_wrapper">
+                             <div class="add_friend_img">
+                            <img class="img-fluid" src="./assets/255x255 2.jpg" alt="">
+                         </div>
+                         <div class="add_friend_title_wrapper2">
+                             <div class="add_friend_img_title">
+                             <h5>MD LIO MESSI</h5>
+                         </div>
+                         <div class="add_friend_smallimg">
+                             <img class="img-fluid" src="./assets/120x120 (4).jpg" alt="">
+                             <span>94 mutual friends</span>
+                         </div>
+                         <div class="add_friend_img_btn">
+                             <a href="#"> <span><i class="fas fa-user-plus"></i></span> Add Friend</a>
+                         </div>
+                         </div>
+                         </div>
+                         </div>
+                     </div>
+                 </div>
+                 <!-- post content -->
+                 <div class="post_content">
+                     <!-- post one -->
+                     <div class="post_content_wrapper">
+                         <div class="post_img_content_wrapper">
+                             <div class="profile_post_img_weapper">
+                             <div class="post_profile_img">
+                             <figure>
+                                 <img class="img-fluid" src="./assets/120x120 (3).jpg" alt="">
+                                 <strong>Emilia Claire</strong><br>
+                                 <span>2 hrs</span>
+                                 <span><i class="fas fa-user-friends"></i></span>
+                             </figure>
+                         </div>
+                         <div class="post_profile_img_icon">
+                             <span><i class="fas fa-ellipsis-h"></i></span>
+                         </div>
+                         </div>
+                         <div class="post_title">
+                             <h4>today I taking a selfie from the fashion show</h4>
+                         </div>
+                         </div>
+                         <div class="post_img">
+                             <figure>
+                                 <img class="img-fluid" src="./assets/post1.jpg" alt="post">
+                             </figure>
+                         </div>
+                         <div class="post_social">
+                            <div class="post_social_wrapper d-flex justify-content-between align-content-center">
+                                 <span class="likeicon"><i class="fas fa-thumbs-up"></i><strong>1020</strong></span>
+                                <strong class="comment">320 comments</strong>
+                            </div>
+                             <ul>
+                                 <li><a href="#"><i class="fas fa-thumbs-up"></i><span>Like</span></a></li>
+                                 <li><a href="#"><i class="fas fa-comment-alt"></i><span>Comment</span></a></li>
+                                 <li><a href="#"><i class="fas fa-share"></i><span>Share</span></a></li>
+                             </ul>
+                         </div>
+                     </div>
+                     <!-- post two -->
+                     <div class="post_content_wrapper">
+                         <div class="post_img_content_wrapper">
+                             <div class="profile_post_img_weapper">
+                             <div class="post_profile_img">
+                             <figure>
+                                 <img class="img-fluid" src="./assets/120x120 (4).jpg" alt="">
+                                 <strong>Erika Ghoshla</strong><br>
+                                 <span>5 hrs</span>
+                                 <span><i class="fas fa-user-friends"></i></span>
+                             </figure>
+                         </div>
+                         <div class="post_profile_img_icon">
+                             <span><i class="fas fa-ellipsis-h"></i></span>
+                         </div>
+                         </div>
+                         <div class="post_title">
+                             <h4> the fashion show</h4>
+                         </div>
+                         </div>
+                         <div class="post_img">
+                             <figure>
+                                 <img class="img-fluid" src="./assets/post2.jpg" alt="post">
+                             </figure>
+                         </div>
+                         <div class="post_social">
+                            <div class="post_social_wrapper d-flex justify-content-between align-content-center">
+                                 <span class="likeicon"><i class="fas fa-thumbs-up"></i><strong>5040</strong></span>
+                                <strong class="comment">670 comments</strong>
+                            </div>
+                             <ul>
+                                 <li><a href="#"><i class="fas fa-thumbs-up"></i><span>Like</span></a></li>
+                                 <li><a href="#"><i class="fas fa-comment-alt"></i><span>Comment</span></a></li>
+                                 <li><a href="#"><i class="fas fa-share"></i><span>Share</span></a></li>
+                             </ul>
+                         </div>
+                     </div>
+                 </div>
+                 <!-- learn more btn -->
+                 <div class="learn_more_btn">
+                     <a href="#">Learn More</a>
+                 </div>
+             </div>
+             <!-- main content right -->
+             <div class="col-xl-3 col-lg-3 col-md-3 col-sm-3 mx-auto">
+                 <div class="main_content_right">
+                    <div class="main_content_right_wrapper">
+                        <div class="right_content_title">
+                            <h5>Sponsored</h5>
+                        </div>
+                        <div class="right_content_ads_img_wrapper">
+                        <div class="right_content_ads_img">
+                            <figure>
+                                <img class="img-fluid" src="./assets/ads1.jpg" alt="">
+                            </figure>
+                        </div>
+                        <div class="right_content_ads_img_title">
+                            <strong>Green iT Solution build your career</strong><br>
+                            <span>greenitsolution.com</span>
+                        </div>
+                        </div>
+                        <div class="right_content_ads_img_wrapper">
+                        <div class="right_content_ads_img">
+                            <figure>
+                                <img class="img-fluid" src="./assets/ads2.jpg" alt="">
+                            </figure>
+                        </div>
+                        <div class="right_content_ads_img_title">
+                            <strong>Launch your career today.</strong><br>
+                            <span>www.mkto.cosin.com</span>
+                        </div>
+                        </div>
+                        <div class="right_content_ads_img_wrapper">
+                        <div class="right_content_ads_img">
+                            <figure>
+                                <img class="img-fluid" src="./assets/ads3.jpg" alt="">
+                            </figure>
+                        </div>
+                        <div class="right_content_ads_img_title">
+                            <strong>Nascafe Coffee Eat It Now</strong><br>
+                            <span>www.nascafecoffee.com</span>
+                        </div>
+                        </div>
+                        <!-- birthday section -->
+                        <div class="right_content_birthday">
+                            <div class="right_content_title">
+                            <h5>Birthdays</h5>
+                            </div>
+                        <div class="birthday_icon_wrapper">
+                        <div class="birthday_icon">
+                            <span><i class="fas fa-gift"></i></span>
+                        </div>
+                        <div class="birthday_icon_title">
+                            <p><strong>Jesika, Erika </strong> and <b>7 others </b>have birthday today.</p>
+                        </div>
+                        </div>
+                        </div>
+                        <!-- your pages -->
+                        <div class="your_page_section">
+                            <div class="your_page_title_wrapper">
+                                <div class="your_page_title">
+                                    <h5>Your Page</h5>
+                                </div>
+                                <div class="your_page_title_icon">
+                                    <span><i class="fas fa-ellipsis-h"></i></span>
+                                </div>
+                                </div>
+                                <!-- your page profile -->
+                                <div class="your_page_profile_wrapper">
+                                    <ul>
+                                        <li><div class="your_page_profile_img">
+                                        <figure>
+                                            <img class="img-fluid" src="./assets/mh.png" alt="">
+                                        </figure>
+                                    </div></li>
+                                    </ul>
+                                    <div class="your_page_profile_img_title">
+                                        <h6>Developer Mahedi</h6>
+                                    </div>
+                                </div>
+                                <div class="your_page_profile_wrapper">
+                                    <ul>
+                                        <li><div class="your_page_profile_img">
+                                            <span><i class="fas fa-bell"></i></span>
+                                    </div></li>
+                                    </ul>
+                                    <div class="your_page_profile_img_title">
+                                        <h6 class="small">Notifications</h6>
+                                    </div>
+                                </div>
+                                <div class="your_page_profile_wrapper">
+                                    <ul>
+                                        <li><div class="your_page_profile_img">
+                                            <span><i class="fas fa-bullhorn"></i></span>
+                                    </div></li>
+                                    </ul>
+                                    <div class="your_page_profile_img_title">
+                                        <h6 class="small">Create Promotion</h6>
+                                    </div>
+                                </div>
+                        </div>
+                        <!-- friend requests-->
+                        <div class="friend_requests_section">
+                             <div class="friend_requests_title_wrapper">
+                                <div class="friend_requests_title">
+                                    <h5>Friend Requests</h5>
+                                </div>
+                                <div class="friend_requests_title_icon">
+                                    <span>See All</span>
+                                </div>
+                                </div>
+                                <!-- friend requests profile -->
+                                <div class="friend_requests_profile_wrapper">
+                                    <ul>
+                                        <li><div class="friend_requests_profile_img">
+                                        <figure>
+                                            <img class="img-fluid" src="./assets/120x120 (4).jpg" alt="">
+                                        </figure>
+                                    </div></li>
+                                    </ul>
+                                    <div class="friend_requests_profile_img_title">
+                                        <h6>Angle Maria</h6>
+                                    </div>
+                                </div>
+                                <div class="friend_requests_small_wrapper">
+                                    <ul>
+                                        <li><div class="friend_small_profile_img">
+                                        <figure>
+                                            <img class="img-fluid" src="./assets/120x120 (2).jpg" alt="">
+                                        </figure>
+                                    </div></li>
+                                    </ul>
+                                    <div class="friend_small_profile_img_title">
+                                        <h6>35 mutuals friends</h6>
+                                    </div>
+                                </div>
+                                <div class="friend_requests_btn">
+                                    <a href="#" class="confirm">Confirm</a>
+                                    <a href="#" class="delete">Delete</a>
+                                </div>
+                        </div>
+
+                        <!-- contact section -->
+                        <div class="contact_section">
+                            <div class="contact_section_wrapper">
+                                <div class="contact_section_title_wrapper">
+                                <div class="contact_section_title">
+                                    <h5>Contacts</h5>
+                                </div>
+                                <div class="contact_section_title_icon">
+                                    <span><i class="fas fa-ellipsis-h"></i></span>
+                                </div>
+                                </div>
+                                <!-- contact profile -->
+                                <div class="contact_section_profile_wrapper">
+                                    <ul>
+                                        <li><div class="contact_section_profile_img">
+                                        <figure>
+                                            <img class="img-fluid" src="./assets/120x120.jpg" alt="">
+                                        </figure>
+                                    </div></li>
+                                    </ul>
+                                    <div class="contact_section_profile_img_title">
+                                        <h6>Erika Ghoshla</h6>
+                                    </div>
+                                </div>
+                                <div class="contact_section_profile_wrapper">
+                                   <ul>
+                                       <li> <div class="contact_section_profile_img">
+                                        <figure>
+                                            <img class="img-fluid" src="./assets/120x120(8).jpg" alt="">
+                                        </figure>
+                                    </div></li>
+                                   </ul>
+                                    <div class="contact_section_profile_img_title">
+                                        <h6>Cora Emery</h6>
+                                    </div>
+                                </div>
+                                <div class="contact_section_profile_wrapper">
+                                    <ul>
+                                        <li><div class="contact_section_profile_img">
+                                        <figure>
+                                            <img class="img-fluid" src="./assets/120x120 (3).jpg" alt="">
+                                        </figure>
+                                    </div></li>
+                                    </ul>
+                                    <div class="contact_section_profile_img_title">
+                                        <h6>Josephine Sarah</h6>
+                                    </div>
+                                </div>
+                                <div class="contact_section_profile_wrapper">
+                                    <ul>
+                                        <li><div class="contact_section_profile_img">
+                                        <figure>
+                                            <img class="img-fluid" src="./assets/120x120(6).jpg" alt="">
+                                        </figure>
+                                    </div></li>
+                                    </ul>
+                                    <div class="contact_section_profile_img_title">
+                                        <h6>Autumn Nevaeh</h6>
+                                    </div>
+                                </div>
+                                <div class="contact_section_profile_wrapper">
+                                    <ul>
+                                        <li><div class="contact_section_profile_img">
+                                        <figure>
+                                            <img class="img-fluid" src="./assets/120x120(5).jpg" alt="">
+                                        </figure>
+                                    </div></li>
+                                    </ul>
+                                    <div class="contact_section_profile_img_title">
+                                        <h6>Natalia Quinn</h6>
+                                    </div>
+                                </div>
+                                <div class="contact_section_profile_wrapper">
+                                    <ul>
+                                        <li><div class="contact_section_profile_img">
+                                        <figure>
+                                            <img class="img-fluid" src="./assets/120x120 (4).jpg" alt="">
+                                        </figure>
+                                    </div></li>
+                                    </ul>
+                                    <div class="contact_section_profile_img_title">
+                                        <h6>Archie Ricky</h6>
+                                    </div>
+                                </div>
+                                <div class="contact_section_profile_wrapper">
+                                    <ul>
+                                        <li><div class="contact_section_profile_img">
+                                        <figure>
+                                            <img class="img-fluid" src="./assets/120x120(7).jpg" alt="">
+                                        </figure>
+                                    </div></li>
+                                    </ul>
+                                    <div class="contact_section_profile_img_title">
+                                        <h6>Miles Asher</h6>
+                                    </div>
+                                </div>
+                                <div class="contact_section_profile_wrapper">
+                                   <ul>
+                                       <li> <div class="contact_section_profile_img">
+                                        <figure>
+                                            <img class="img-fluid" src="./assets/120x120 (2).jpg" alt="">
+                                        </figure>
+                                    </div></li>
+                                   </ul>
+                                    <div class="contact_section_profile_img_title">
+                                        <h6>Axel Leif</h6>
+                                    </div>
+                                </div>
+                                <div class="contact_section_profile_wrapper">
+                                    <ul>
+                                        <li><div class="contact_section_profile_img">
+                                        <figure>
+                                            <img class="img-fluid" src="./assets/120x120(9).jpg" alt="">
+                                        </figure>
+                                    </div></li>
+                                    </ul>
+                                    <div class="contact_section_profile_img_title">
+                                        <h6>Ezekiel Genesis</h6>
+                                    </div>
+                                </div>
+                                <div class="contact_section_profile_wrapper">
+                                    <ul>
+                                        <li><div class="contact_section_profile_img">
+                                        <figure>
+                                            <img class="img-fluid" src="./assets/120x120(10).jpg" alt="">
+                                        </figure>
+                                    </div></li>
+                                    </ul>
+                                    <div class="contact_section_profile_img_title">
+                                        <h6>Muhammad</h6>
+                                    </div>
+                                </div>
+                                <div class="contact_section_profile_wrapper">
+                                    <ul>
+                                        <li><div class="contact_section_profile_img">
+                                        <figure>
+                                            <img class="img-fluid" src="./assets/120x120.jpg" alt="">
+                                        </figure>
+                                    </div></li>
+                                    </ul>
+                                    <div class="contact_section_profile_img_title">
+                                        <h6>Erika Ghoshla</h6>
+                                    </div>
+                                </div>
+                                <div class="contact_section_profile_wrapper">
+                                    <ul>
+                                        <li><div class="contact_section_profile_img">
+                                        <figure>
+                                            <img class="img-fluid" src="./assets/120x120(8).jpg" alt="">
+                                        </figure>
+                                    </div></li>
+                                    </ul>
+                                    <div class="contact_section_profile_img_title">
+                                        <h6>Cora Emery</h6>
+                                    </div>
+                                </div>
+                                <div class="contact_section_profile_wrapper">
+                                    <ul>
+                                        <li><div class="contact_section_profile_img">
+                                        <figure>
+                                            <img class="img-fluid" src="./assets/120x120 (3).jpg" alt="">
+                                        </figure>
+                                    </div></li>
+                                    </ul>
+                                    <div class="contact_section_profile_img_title">
+                                        <h6>Josephine Sarah</h6>
+                                    </div>
+                                </div>
+                                <div class="contact_section_profile_wrapper">
+                                    <ul>
+                                        <li><div class="contact_section_profile_img">
+                                        <figure>
+                                            <img class="img-fluid" src="./assets/120x120(6).jpg" alt="">
+                                        </figure>
+                                    </div></li>
+                                    </ul>
+                                    <div class="contact_section_profile_img_title">
+                                        <h6>Autumn Nevaeh</h6>
+                                    </div>
+                                </div>
+                                <div class="contact_section_profile_wrapper">
+                                   <ul>
+                                       <li> <div class="contact_section_profile_img">
+                                        <figure>
+                                            <img class="img-fluid" src="./assets/120x120(5).jpg" alt="">
+                                        </figure>
+                                    </div></li>
+                                   </ul>
+                                    <div class="contact_section_profile_img_title">
+                                        <h6>Natalia Quinn</h6>
+                                    </div>
+                                </div>
+                                <div class="contact_section_profile_wrapper">
+                                    <ul>
+                                        <li><div class="contact_section_profile_img">
+                                        <figure>
+                                            <img class="img-fluid" src="./assets/120x120 (4).jpg" alt="">
+                                        </figure>
+                                    </div></li>
+                                    </ul>
+                                    <div class="contact_section_profile_img_title">
+                                        <h6>Archie Ricky</h6>
+                                    </div>
+                                </div>
+                                <div class="contact_section_profile_wrapper">
+                                    <ul>
+                                        <li><div class="contact_section_profile_img">
+                                        <figure>
+                                            <img class="img-fluid" src="./assets/120x120(7).jpg" alt="">
+                                        </figure>
+                                    </div></li>
+                                    </ul>
+                                    <div class="contact_section_profile_img_title">
+                                        <h6>Miles Asher</h6>
+                                    </div>
+                                </div>
+                                <div class="contact_section_profile_wrapper">
+                                    <ul>
+                                        <li><div class="contact_section_profile_img">
+                                        <figure>
+                                            <img class="img-fluid" src="./assets/120x120 (2).jpg" alt="">
+                                        </figure>
+                                    </div></li>
+                                    </ul>
+                                    <div class="contact_section_profile_img_title">
+                                        <h6>Axel Leif</h6>
+                                    </div>
+                                </div>
+                                <div class="contact_section_profile_wrapper">
+                                    <ul>
+                                        <li><div class="contact_section_profile_img">
+                                        <figure>
+                                            <img class="img-fluid" src="./assets/120x120(9).jpg" alt="">
+                                        </figure>
+                                    </div></li>
+                                    </ul>
+                                    <div class="contact_section_profile_img_title">
+                                        <h6>Ezekiel Genesis</h6>
+                                    </div>
+                                </div>
+                                <div class="contact_section_profile_wrapper">
+                                    <ul>
+                                        <li><div class="contact_section_profile_img">
+                                        <figure>
+                                            <img class="img-fluid" src="./assets/120x120(10).jpg" alt="">
+                                        </figure>
+                                    </div></li>
+                                    </ul>
+                                    <div class="contact_section_profile_img_title">
+                                        <h6>Muhammad</h6>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Group Conversations -->
+                        <div class="group_section">
+                            <div class="group_title">
+                                <h5> Group Conversations </h5>
+                            </div>
+                                <div class="group_section_profile_wrapper">
+                                    <ul>
+                                        <li>
+                                            <div class="group_section_profile_img">
+                                                <figure>
+                                                    <img class="img-fluid" src="./assets/lfwf.jpg" alt="">
+                                                </figure>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                    <div class="group_section_profile_img_title">
+                                        <h6>LFWF Academy</h6>
+                                    </div>
+                                </div>
+                                <div class="group_section_profile_wrapper">
+                                    <ul>
+                                        <li>
+                                            <div class="group_section_profile_img">
+                                                <figure>
+                                                    <img class="img-fluid" src="./assets/nasim.jpg" alt="">
+                                                </figure>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                    <div class="group_section_profile_img_title">
+                                        <h6>Freelancer Nasim</h6>
+                                    </div>
+                                </div>
+                                <div class="group_section_profile_wrapper">
+                                    <ul>
+                                        <li>
+                                            <div class="group_section_profile_img">
+                                                <figure>
+                                                    <img class="img-fluid" src="./assets/school.jpg" alt="">
+                                                </figure>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                    <div class="group_section_profile_img_title">
+                                        <h6>Uthali Secondary School 2017</h6>
+                                    </div>
+                                </div>
+                                <div class="group_section_profile_wrapper">
+                                    <ul>
+                                        <li>
+                                            <div class="group_section_profile_img">
+                                                <figure>
+                                                    <img class="img-fluid" src="./assets/collage.jpg" alt="">
+                                                </figure>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                    <div class="group_section_profile_img_title">
+                                        <h6>Uthali Degree College 2019</h6>
+                                    </div>
+                                </div>
+                                <div class="group_section_profile_wrapper">
+                                    <ul>
+                                        <li>
+                                            <div class="group_section_profile_img">
+                                                <span><i class="fas fa-plus"></i></span>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                    <div class="group_section_profile_img_title">
+                                        <h6>Create New Group</h6>
+                                    </div>
+                                </div>
+                        </div>
+                    </div>
+                 </div>
+             </div>
+        </div>
+    </div>
+</div>
+<!-- footer section -->
+<footer class="footer_section">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-xl-12 col-lg-12 col-md-12 col-sm-6 mx-auto text-center">
+                <div class="footer_social">
+                    <ul>
+                        <li><a href="#"><span><i class="fab fa-facebook-f"></i></span></a></li>
+                        <li><a href="#"><span><i class="fab fa-twitter"></i></span></a></li>
+                        <li><a href="#"><span><i class="fab fa-linkedin-in"></i></span></a></li>
+                        <li><a href="#"><span><i class="fab fa-instagram"></i></span></a></li>
+                    </ul>
+                </div>
+                <div class="copy_right">
+                    <p>copyright &copy;2021 | Designer By <b>Developer Mahedi</b></p>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+    <!-- Optional JavaScript -->
+    <!-- Popper.js first, then Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/js/bootstrap.min.js" integrity="sha384-oesi62hOLfzrys4LxRF63OJCXdXDipiYWBnvTl9Y9/TRlw5xlKIEHpNyvvDShgf/" crossorigin="anonymous"></script>
+  </body>
+</html>

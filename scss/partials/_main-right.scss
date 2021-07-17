@@ -1,0 +1,308 @@
+//main_content_right
+.main_content_right{
+    // position: fixed;
+    // top: 9rem;
+    .main_content_right_wrapper{
+        .right_content_title{
+            h5{
+                font-size: 2rem;
+                color: $textColor;
+                margin-bottom: 2rem;
+            }
+        }
+        .right_content_ads_img_wrapper{
+            @include flex;
+            margin-bottom: 2rem;
+            .right_content_ads_img{
+                width: 15rem;
+                height: 10rem;
+                img{
+                    width: 100%;
+                    height: auto;
+                    border-radius: .5rem;
+                }
+            }
+            .right_content_ads_img_title{
+                strong{
+                    font-size: 1.6rem;
+                    color: $textColor;
+                }
+                span{
+                   font-size: 1rem;
+                   color: $iconTextColor; 
+                }
+            }
+        }
+    }
+    //right_content_birthday
+    .right_content_birthday{
+        border-top: .1rem solid $borderColor;
+        border-bottom: .1rem solid $borderColor;
+        padding: 1rem;
+        .right_content_title{
+            h5{
+                font-size: 2rem;
+                color: $textColor;
+            }
+        }
+        .birthday_icon_wrapper{
+            @include flex;
+            .birthday_icon{
+                span{
+                    font-size: 4rem;
+                    margin-right: 2rem;
+                    color: $giftIconColor;
+                }
+            }
+            .birthday_icon_title{
+                p{
+                    font-size: 1.6rem;
+                }
+            }
+        }
+    }
+    //contact_section
+    .contact_section{
+        position: relative;
+        top: 5rem;
+        .contact_section_wrapper{
+            .contact_section_title_wrapper{
+                margin-bottom: 2rem;
+                @include flex;
+                .contact_section_title{
+                    h5{
+                        font-size: 2rem;
+                    }
+                }
+                .contact_section_title_icon{
+                    span{
+                        font-size: 2rem;
+                        color: $textColor;
+                        cursor: pointer;
+                    }
+                }
+            }
+            //contact_section_profile_wrapper
+            .contact_section_profile_wrapper{
+                display: flex;
+                align-items: center;
+                line-height: 2;
+                ul{
+                    li{
+                        position: relative;
+                        margin-left: -2rem;
+                        &::before{
+                            @include iconBefore;
+                        }
+
+                    }
+                }
+                .contact_section_profile_img{
+                    margin-right: 1rem;
+                    
+                    img{
+                        @include imgSize;
+                        position: relative;
+                    }
+                }
+                .contact_section_profile_img_title{
+                    h6{
+                        font-size: 1.8rem;
+                        color: $textColor;
+                    }
+                }
+            }
+        }
+    }
+    //group_section
+    .group_section{
+        position: relative;
+        top: 10rem;
+        .group_title{
+            border-top: .1rem solid $borderColor;
+           
+            h5{
+                font-size: 2rem;
+                color: $textColor;
+                 margin-top: 2rem;
+                margin-bottom: 2rem;
+            }
+        }
+        .group_section_profile_wrapper{
+            display: flex;
+            align-items: center;
+            ul{
+                li{
+                    margin: 0 .5rem;
+                    position: relative;
+                    &::before{
+                            @include iconBefore;
+                        }
+                    .group_section_profile_img{
+                        span{
+                            @include iconSize;
+                            background-color: $navBarBgColor;
+                            transition: all .5s ease;
+                            &:hover{
+                                background-color: $giftIconColor;
+                                color: $navBarBgColor;
+                            }
+                        }
+                        margin-right: 1rem;
+                        img{
+                            @include imgSize;
+                        }
+                    }
+                }
+            }
+            .group_section_profile_img_title{
+                h6{
+                    font-size: 1.7rem;
+                    color: $textColor;
+                }
+            }
+        }
+    }
+    //your_page_section
+    .your_page_section{
+        position: relative;
+        top: 5rem;
+        margin-bottom: 5rem;
+        .your_page_title_wrapper{
+            display: flex;
+            justify-content: space-between;
+            .your_page_title{
+                h5{
+                    font-size: 1.6rem;
+                }
+            }
+            .your_page_title_icon{
+                span{
+                    font-size: 2rem;
+                    
+                }
+            }
+        }
+        .your_page_profile_wrapper{
+            display: flex;
+            align-items: center;
+            ul{
+                li{
+                    .your_page_profile_img{
+                        margin-right: 1rem;
+                        span{
+                            font-size: 2rem;
+                        }
+                        img{
+                            @include imgSize;
+                        }
+                    }
+                }
+            }
+            .your_page_profile_img_title{
+                h6{
+                    font-size: 1.8rem;
+                    &.small{
+                        font-size: 1.3rem;
+                    }
+                }
+            }
+        }
+    }
+    //friend_requests_section
+    .friend_requests_section{
+        border-top: .1rem solid $borderColor;
+        border-bottom: .1rem solid $borderColor;
+        padding: 3rem;
+        .friend_requests_title_wrapper{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            .friend_requests_title{
+                h5{
+                    font-size: 2rem;
+                    color: $textColor;
+                    margin-bottom: 2rem;
+                }
+            }
+            .friend_requests_title_icon{
+                span{
+                    font-size: 1.6rem;
+                    color: $homeIconColor;
+                    cursor: pointer;
+                    transition: all .3s ease;
+                    &:hover{
+                        text-decoration: underline;
+                    }
+                }
+            }
+        }
+        //friend_requests_profile_wrapper
+        .friend_requests_profile_wrapper{
+            display: flex;
+            align-items: center;
+            .friend_requests_profile_img{
+                margin-right: 1rem;
+                img{
+                    @include imgSize;
+                }
+            }
+            .friend_requests_profile_img_title{
+                h6{
+                    font-size: 1.6rem;
+                }
+            }
+        }
+        //friend_requests_small_wrapper
+        .friend_requests_small_wrapper{
+            display: flex;
+            align-items: center;
+            position: relative;
+            top: -2rem;
+            left: 6rem;
+            .friend_small_profile_img{
+                margin-right: 1rem;
+                img{
+                    width: 3rem;
+                    height: 3rem;
+                    border-radius: 5rem;
+                    border: .1rem solid $giftIconColor;
+                }
+            }
+            .friend_small_profile_img_title{
+                h6{
+                    font-size: 1.2rem;
+                }
+            }
+        }
+    }
+    //friend_requests_btn
+    .friend_requests_btn{
+        position: relative;
+        left: 7rem;
+        bottom: 2rem;
+        a{
+            padding: 1.2rem 3rem;
+            font-size: 1.6rem;
+            color: $navBarBgColor;
+            border-radius: 1rem;
+            margin: 0 1rem;
+            transition: all .5s ease;
+        }
+        .confirm{
+            background-color: $homeIconColor;
+            &:hover{
+                background-color: $flagIconColor;
+                color: $navBarBgColor;
+            }
+        }
+        .delete{
+            background-color: $borderColor;
+            color: $textColor;
+            &:hover{
+                background-color: $homeIconColor;
+                color: $navBarBgColor;
+            }
+        }
+    }
+}

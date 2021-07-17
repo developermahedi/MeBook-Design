@@ -1,0 +1,43 @@
+
+// footer_section
+.footer_section{
+    background-color: $navBarBgColor;
+    padding: 2rem 0;
+    .footer_social{
+        margin-bottom: 2rem;
+        ul{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            li{
+                margin: 0 1rem;
+                a{ 
+                    font-size: 1.6rem;
+                    color: $textColor;
+                    width: 5rem;
+                    height: 5rem;
+                    line-height: 5rem;
+                    border-radius: 5rem;
+                    text-align: center;
+                    display: inline-block;
+                    background-color: $inputBgColor;
+                    transition: all .5s ease;
+                    &:hover{
+                        background-color: $giftIconColor;
+                        color: $navBarBgColor;
+                    }
+                }
+            }
+        }
+    }
+    .copy_right{
+        p{
+            font-size: 1.6rem;
+            color: $textColor;
+            b{
+                color: $flagIconColor;
+                text-shadow: .1rem .3rem .2rem $homeIconColor;
+            }
+        }
+    }
+}

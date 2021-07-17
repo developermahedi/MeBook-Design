@@ -1,0 +1,20 @@
+
+// partials filses
+@import"./partials/reset";
+@import"./partials/variable";
+@import"./partials/mixin";
+@import"./partials/navbar";
+@import"./partials/middle";
+@import"./partials/main-right";
+@import"./partials/footer";
+
+
+
+body{
+    background-color: $bodyColor;
+}
+
+
+
+
+

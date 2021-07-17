@@ -1,0 +1,276 @@
+
+// main_header section
+.main_header{
+    width: 100%;
+    height: 8rem;
+    padding: 0% 2%;
+    background: $navBarBgColor;
+    box-shadow: 0rem 0rem .5rem $iconTextColor;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    //navbar_left
+    .navbar_left{
+        .logo_wrapper{
+            display: flex;
+            align-items: center;
+            margin-top: 0.7em;
+            .logo{
+            a{
+                font-size: 3.5rem;
+                font-weight: 400;
+                color: $homeIconColor;
+            }
+        }
+        .search{
+            position: relative;
+            width: 30rem;
+            span{
+                font-size: 2rem;
+                font-size: 2rem;
+                position: absolute;
+                top: 2.2rem;
+                left: 2rem;
+                color: $iconTextColor;
+            }
+            input{
+                font-size: 1.6rem;
+                border: .1rem solid transparent;
+                outline: none;
+                width: 100%;
+                padding: 1.2rem 4rem;
+                border-radius: 5rem;
+                margin-top: 1.2rem;
+                margin-left: 1rem;
+                background-color: $inputBgColor;
+                color: $iconTextColor;
+                &:focus{
+                    border: .1rem solid $homeIconColor;
+                }
+            }
+        }
+        }
+    }
+    //navbar_middle
+    .navbar_middle{
+        ul{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            line-height: 8rem;
+            li{
+                margin: 0 4rem;
+                a{
+                    span{
+                        display: inline-block;
+                        font-size: 3rem;
+                        color: $iconTextColor;
+                        transition: all .5s ease;
+                        &:hover{
+                            color: $giftIconColor;
+                        }
+                        &.active{
+                            color: $homeIconColor;
+                        }
+                        &.friendsicon{
+                        position: relative;
+                        &::before{
+                            content: "127";
+                            position: absolute;
+                            top: 1rem;
+                            left: 2rem;
+                            background-color: $iconVideo;
+                            width: 3rem;
+                            height: 3rem;
+                            line-height: 3rem;
+                            text-align: center;
+                            border-radius: 5rem;
+                            color: $navBarBgColor;
+                            font-size: 1.7rem;
+                        }
+                        
+                    }
+                    
+                    }
+                    .iconRound{
+                        width: 5rem;
+                        height: 5rem;
+                        line-height: 5rem;
+                        border: .1rem solid $iconTextColor;
+                        border-radius: 5rem;
+                        text-align: center;
+                        position: relative;
+                        &::before{
+                            content: "7";
+                            position: absolute;
+                            top: 0;
+                            left: 3rem;
+                            background-color: $iconVideo;
+                            width: 3rem;
+                            height: 3rem;
+                            line-height: 3rem;
+                            text-align: center;
+                            border-radius: 5rem;
+                            color: $navBarBgColor;
+                            font-size: 1.7rem;
+                        }
+                        }
+                }
+            }
+        }
+    }
+    //navbar_right
+    .navbar_right{
+        position: relative;
+        .profile_wrapper{
+            display: flex;
+            align-items: center;
+            margin-left: 2rem;
+            margin-top: 1rem;
+            .profile_img{
+            img{
+                @include imgSize;
+                margin-right: 1rem;
+            }
+            strong{
+                font-size: 1.6rem;
+                color: $textColor;
+            }
+        }
+        //profile_icon
+        .profile_icon{
+            ul{
+                position: relative;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                li{
+                    margin: 0 1rem;
+                    position: relative;
+                    &:hover ul{
+                        opacity: 1;
+                        visibility: visible;
+                        transform: scaleY(1);
+                    }
+                    a{
+                        span{
+                            @include iconSize;
+                            &:hover{
+                                background-color: $homeIconColor;
+                                color: $navBarBgColor;
+                            }
+                            &.messenger{
+                                position: relative;
+                                &::before{
+                            content: "17";
+                            position: absolute;
+                            top: 0;
+                            left: 3rem;
+                            background-color: $iconVideo;
+                            width: 3rem;
+                            height: 3rem;
+                            line-height: 3rem;
+                            text-align: center;
+                            border-radius: 5rem;
+                            color: $navBarBgColor;
+                            font-size: 1.7rem;
+                        }
+                            }
+                            &.bellicon{
+                                position: relative;
+                                &::before{
+                            content: "27";
+                            position: absolute;
+                            top: 0;
+                            left: 3rem;
+                            background-color: $iconVideo;
+                            width: 3rem;
+                            height: 3rem;
+                            line-height: 3rem;
+                            text-align: center;
+                            border-radius: 5rem;
+                            color: $navBarBgColor;
+                            font-size: 1.7rem;
+                        }
+                            }
+                        }
+                    }
+                    // dropdown menu
+                    & ul{
+                        position: absolute;
+                        top: 130%;
+                        left: -25rem;
+                        width: 35rem;
+                        background-color: $navBarBgColor;
+                        flex-direction: column;
+                        transform-origin: top center;
+                        transform: scaleY(0);
+                        opacity: 0;
+                        visibility: hidden;
+                        transition: all .5s ease;
+                        li{
+                            position: relative;
+                            margin: 1rem 0;
+                            a{
+                                font-size: 1.6rem;
+                                display: block;
+                                .leftside{
+                                        margin-left: -11rem;
+                                        & strong{
+                                            font-size: 2rem;
+                                        }
+                                        & p{
+                                            margin-left: 8rem;
+                                            margin-top: -1.5rem;
+                                        }
+                                    }
+                                //setting_wrapper
+                                .setting_wrapper{
+                                    display: flex;
+                                    align-items: center;
+                                    
+                                    .setting_icon{
+                                        margin-left: -5rem;
+                                        span{
+                                            @include iconSize;
+                                            margin-right: 1rem;
+                                            &.left{
+                                                margin-left: -4rem;
+                                            }
+                                            &.left{
+                                                margin-left: -4rem;
+                                            }
+                                            &.left3{
+                                                margin-left: -3rem;
+                                            }
+                                            &.left4{
+                                                margin-left: 5rem;
+                                            }
+                                            &.left5{
+                                                margin-left: -8rem;
+                                            }
+                                        }
+                                    }
+                                    .setting_title{
+                                        h5{
+                                            font-size: 1.8rem;
+                                            color: $textColor;
+                                        }
+                                    }
+                                    .setting_title_icon{
+                                        strong{
+                                            font-size: 2rem;
+                                            color: $textColor;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        }
+    }
+}
